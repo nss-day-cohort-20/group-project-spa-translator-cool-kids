@@ -1,2 +1,2 @@
 //global variable with empty object
-let translator = {};
+var translator = {};

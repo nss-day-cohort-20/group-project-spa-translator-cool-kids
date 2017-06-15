@@ -9,13 +9,15 @@ var translator = (function(global) {
 	};
 
 	global.translateToSpanish = function(inputString) {
-		console.log(inputString);
+
+		let translation = inputString;
+
 		for (var word in spanish) {
-			let wordRegEx = `/${word}/gi`;
-			console.log(wordRegEx);
-			inputString = inputString.replace(wordRegEx, word);
+			let wordRegEx = new RegExp(`${word}`, 'gi');
+			translation = translation.replace(wordRegEx, spanish[word]);
 		}
-		return inputString;
+
+		return translation;
 	}
 
 	return global

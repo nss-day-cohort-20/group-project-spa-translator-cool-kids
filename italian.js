@@ -1,4 +1,4 @@
-let translator = (function(object){
+var translator = (function(object){
 
 //private variable
 let italian ={merry:"buon", christmas:"natale", and:"e", happy:"felice", new:"nuovo", year:"anno"};

@@ -3,13 +3,13 @@ var translator = (function(global) {
 		merry : "frohe",
 		christmas : "weihnachten",
 		and : "und",
-		happy : "ein glückliches",
+		happy : "ein gl&uuml;ckliches",
 		new : "neues",
 		year : "jahr"
 	};
 
 	global.translateToGerman = function(inputString) {
-		
+
 		let translation = inputString;
 
 		for (var word in german) {

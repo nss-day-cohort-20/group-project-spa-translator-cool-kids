@@ -3,9 +3,9 @@ var translator = (function(global) {
 		merry : "feliz",
 		christmas : "navidad",
 		and : "y",
-		happy :"próspero",
+		happy :"pr&oacute;spero",
 		new :"nuevo",
-		year :"año"
+		year :"a&ntilde;o"
 	};
 
 	global.translateToSpanish = function(inputString) {

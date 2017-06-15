@@ -1,3 +1,4 @@
+
 var translator = (function(global){
 
 //private variable
@@ -32,4 +33,6 @@ global.translateToItalian=function(inputString){
 
  return global;
 
- }(translator));
+return object;
+}(translator || {}));
+

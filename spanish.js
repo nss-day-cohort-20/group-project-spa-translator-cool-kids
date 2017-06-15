@@ -14,7 +14,7 @@ var translator = (function(global) {
 
 		for (var word in spanish) {
 			let wordRegEx = new RegExp(`${word}`, 'gi');
-			console.log(wordRegEx);
+			console.log(translation);
 			translation = translation.replace(wordRegEx, spanish[word]);
 		}
 

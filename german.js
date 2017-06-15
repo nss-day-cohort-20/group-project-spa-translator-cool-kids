@@ -9,8 +9,14 @@ var translator = (function(global) {
 	};
 
 	global.translateToGerman = function(inputString) {
-		inputString.replace()
-		return translateToGerman;
+		
+		let translation = inputString;
+
+		for (var word in german) {
+			let wordRegEx = new RegExp(`${word}`, 'gi');
+			translation = translation.replace(wordRegEx, german[word]);
+		}
+		return translation;
 	}
 
 	return global;

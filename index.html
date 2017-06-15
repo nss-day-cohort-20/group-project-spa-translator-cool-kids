@@ -7,20 +7,22 @@
 	<header>
 		<h1>Translator</h1>
 	</header>
-	<input type="text" name="input" class="input"><br>
-	<select>
+	<textarea id="textInput"></textarea>
+	<br>
+	<select id="languageChoice">
 	    <option value="" disabled="disabled" selected="selected">Select Language</option>
-	    <option id ="germanBtn" value="1">German</option>
-	    <option id ="italianBtn" value="2">Italian</option>
-	    <option id ="spanishBtn" value="spanish">Spanish</option></select><br>
+	    <option id ="germanBtn" value="German">German</option>
+	    <option id ="italianBtn" value="Italian">Italian</option>
+	    <option id ="spanishBtn" value="Spanish">Spanish</option></select><br>
 	</select>
 	<button id="translateBtn">Translate</button>
 	<div id="output"></div>
 <!-- <script src="main.js"></script> -->
-<script src="events.js"></script>
 
 <script src="german.js"></script>
 <script src="italian.js"></script>
 <script src="spanish.js"></script>
+<script src="events.js"></script>
+
 </body>
 </html>

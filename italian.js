@@ -5,34 +5,22 @@ var translator = (function(global){
 let italian ={merry:"buon", christmas:"natale", and:"e", happy:"felice", new:"nuovo", year:"anno"};
 
 //turn this object into 2 equal length arrays
-let englishArray =[];
 
-for(var key in italian){
-	englishArray.push(key);
-}
-
-let italianArray=[];
-for (var value in italian){
-	italianArray.push(italian[value]);
-}
-
-console.log ("italianArray",italianArray);
-console.log ("englishArray",englishArray);
-
-var italianTranslation= "";
 
 global.translateToItalian=function(inputString){
-    console.log(inputString);
-	for(var i=0; i<englishArray.length; i++){
-		italianTranslation += inputString.replace(englishArray[i], italianArray[i] );
 
+let translation = inputString;
+
+	for(var word in italian){
+		let wordRegEx = new RegExp(`${word}`, 'gi');
+		translation= translation.replace(wordRegEx, italian[word]);
 		}
 
- 	return italianTranslation;
+ 	return translation;
 }
 
  return global;
 
-return object;
+
 }(translator || {}));
 

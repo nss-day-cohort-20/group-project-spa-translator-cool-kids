@@ -22,4 +22,9 @@ var translator = (function(global) {
 
 	return global
 
-}(translator));
+}(translator || {}));
+
+// passing "translator || {}" as the immediate invocation argument gets rid of the need for the main.js and allows more flexible loading
+// see "loose augmentation" at http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
+// also looked at speech synthesis here: https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/speak
+// and here: https://codepen.io/matt-west/pen/wGzuJ

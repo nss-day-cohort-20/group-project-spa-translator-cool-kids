@@ -17,4 +17,4 @@ for(key in italian){
 }
 
 return object;
-}(translator));
+}(translator || {}));

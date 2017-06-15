@@ -15,4 +15,4 @@ var translator = (function(global) {
 
 	return global;
 
-}(translator));
+}(translator || {}));

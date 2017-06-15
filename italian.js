@@ -21,8 +21,9 @@ console.log ("englishArray",englishArray);
 var italianTranslation= "";
 
 global.translateToItalian=function(inputString){
+    console.log(inputString);
 	for(var i=0; i<englishArray.length; i++){
-		italianTranslation += inputString.toLowerCase.replace(/englishArray[i]/g, italianArray[i] );
+		italianTranslation += inputString.replace(englishArray[i], italianArray[i] );
 
 		}
 
@@ -32,4 +33,3 @@ global.translateToItalian=function(inputString){
  return global;
 
  }(translator));
-

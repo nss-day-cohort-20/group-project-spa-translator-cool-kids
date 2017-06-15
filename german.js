@@ -16,7 +16,7 @@ var translator = (function(global) {
 			let wordRegEx = new RegExp(`${word}`, 'gi');
 			translation = translation.replace(wordRegEx, german[word]);
 		}
-		return translateToGerman;
+		return translation;
 	}
 
 	return global;
